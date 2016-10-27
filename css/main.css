@@ -20,6 +20,13 @@
     background: -moz-linear-gradient(#e6e7e8, #fff);
     background: linear-gradient(#e6e7e8, #fff);
 }
+.dark-gray-gradient {
+	background: #474747;
+	background: -webkit-linear-gradient(#474747, #767676);
+    background: -o-linear-gradient(#474747, #767676);
+    background: -moz-linear-gradient(#474747, #767676);
+    background: linear-gradient(#474747, #767676);
+}
 .green-gradient {
 	background: #1c6512;
 	background: -webkit-linear-gradient(#1c6512, #2f9622);
@@ -315,4 +322,29 @@
 }
 .margin-top-20n {
 	margin-top: -20px;
+}
+.tips-blue {
+	border: 2px solid #0080b1;
+	color: #0080b1;
+	font-size: 24px;
+	padding: 10px;
+}
+.tips-red {
+	border: 2px solid #bf3019;
+	font-size: 24px;
+	padding: 10px;
+}
+.tips-green {
+	border: 2px solid #5d9632;
+	font-size: 24px;
+	padding: 10px;
+}
+.blue24 {
+	color: #0080b1;
+	font-size: 24px;
+}
+.dor {
+	font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
