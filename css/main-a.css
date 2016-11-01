@@ -1,3 +1,98 @@
+@font-face {
+    font-family: 'HelveticaWeb';
+    src: url('../fonts/helveticaneue-ultralight-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-ultralight-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-ultralight-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-ultralight-webfont.svg#webfont3qddGpQp') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaWeb';
+     src: url('../fonts/helveticaneue-thin-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-thin-webfont.svg#webfontnjQ9fQvd') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaWeb';
+     src: url('../fonts/helveticaneue-light-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-light-webfont.svg#webfontc3wYrkJ7') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaWeb';
+    src: url('../fonts/helveticaneue-roman-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-roman-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-roman-webfont.svg#webfontAWSSTqSU') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaWeb';
+     src: url('../fonts/helveticaneue-medium-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-medium-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-medium-webfont.svg#webfontdIgVeopQ') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaWeb';
+      src: url('../fonts/helveticaneue-bold-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-bold-webfont.svg#webfontfdKLsbkg') format('svg');
+    font-weight: normal;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaWeb';
+       src: url('../fonts/helveticaneue-heavy-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-heavy-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-heavy-webfont.svg#webfontM2jEe6QL') format('svg');
+    font-weight: normal;
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaWeb';
+       src: url('../fonts/helveticaneue-black-webfont.eot?') format('eot'),
+         url('../fonts/helveticaneue-black-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-black-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-black-webfont.svg#webfont1ld8jaPS') format('svg');
+    font-weight: normal;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'HelveticaWeb', 'Helvetica', sans-serif;
+}
+
+p {
+    font-weight: 300;
+}
 .divider-top {
 	background: #6db03b;
 	border-bottom: 2px dashed #fff;
@@ -27,6 +122,10 @@
     background: -moz-linear-gradient(#474747, #767676);
     background: linear-gradient(#474747, #767676);
 }
+.dark-gray-solid {
+  background: #595959;  
+}
+
 .green-gradient {
 	background: #1c6512;
 	background: -webkit-linear-gradient(#1c6512, #2f9622);
@@ -57,13 +156,6 @@
     background: linear-gradient(#8c2412, #bb2f18);
 }
 .blue-gradient {
-	background: #004d6c;
-	background: -webkit-linear-gradient(#004d6c, #0080b1);
-    background: -o-linear-gradient(#004d6c, #0080b1);
-    background: -moz-linear-gradient(#004d6c, #0080b1);
-    background: linear-gradient(#004d6c, #0080b1);
-}
-.blue-c-gradient {
   background-color: #0080b1;
   background-image: -webkit-linear-gradient(30deg, #0080b1 51%, #00417c 49%);
   min-height: 60px;
@@ -111,7 +203,10 @@
     margin-top: -16px;
     width: 240px;
 }
-
+.clear-margin15 {
+    clear: both; 
+    margin-top:15px;
+}
 .clear-margin30 {
 	clear: both; 
 	margin-top:30px;
@@ -158,10 +253,6 @@
     font-weight: 700;
     margin-right: 20px;
     padding: 5px 20px;
-}
-.marginauto {
-	 margin-right: auto; 
-	 margin-left: auto;
 }
 
 .digital-list-div {
@@ -363,28 +454,9 @@
 	font-size: 24px;
 }
 .dor {
-	font-size: 60px;
+    font-size: 60px;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-.social-yw {
-	background: #ffb600;
-	border-radius: 20px;
-	padding: 10px;
-}
-.social-yw-g {
-	background: gray;
-	border-radius: 20px;
-	padding: 10px;
-}
-.social-bg-yw {
-	background: #ffb600;
-	border-radius: 20px;
-}
-.social-wh {
-	border: 4px dashed #fff;
-	border-radius: 20px;
-	padding: 10px;
 }
 .table-row {
     display: table;
@@ -398,17 +470,67 @@
 }
 .callout-grey {
     background: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #5d5d5d;
     text-align: center;
-    padding: 15px 30px;
+    padding: 13px 50px;
+    display: table;
+    margin: auto;
     font-size: 20px;
 }
 .callout-green {
     background: #4d8736;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #fff;
     text-align: center;
-    padding: 15px 30px;
+    padding: 13px 50px;
     font-size: 20px;
+    display: table;
+    margin: auto;
+}
+.callout-orange {
+    background: #ffb600;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    padding: 13px 50px;
+    font-size: 20px;
+    display: table;
+    margin: auto;
+}
+.subheader-large {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.icon-center-block {
+    display: table;
+    margin: auto;
+    width: 580px;
+    max-width: 100%;
+}
+.icon-center-cell:first-child {
+    width: 100px;
+}
+.icon-center-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 15px;
+}
+
+#page-digital .dark-gray-gradient {
+    position: relative !important;
+}
+
+#page-digital .dark-gray-gradient .intro-buildings {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+#page-digital .dark-gray-gradient .container {
+    z-index: 1;
+    position: relative;
 }
