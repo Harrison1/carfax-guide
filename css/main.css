@@ -33,6 +33,7 @@
     background: -o-linear-gradient(#1c6512, #2f9622);
     background: -moz-linear-gradient(#1c6512, #2f9622);
     background: linear-gradient(#1c6512, #2f9622);
+    position: relative;
 }
 .green-gradient-2 {
 	background: #3b6020;
@@ -40,6 +41,7 @@
     background: -o-linear-gradient(#3b6020, #5d9632);
     background: -moz-linear-gradient(#3b6020, #5d9632);
     background: linear-gradient(#3b6020, #5d9632);
+    position: relative;
 }
 .green-gradient-3 {
 	
@@ -63,6 +65,13 @@
     background: -moz-linear-gradient(#004d6c, #0080b1);
     background: linear-gradient(#004d6c, #0080b1);
 }
+.blue-dl-gradient {
+    background: #0080b1;
+    background: -webkit-linear-gradient(#0080b1, #004d6c);
+    background: -o-linear-gradient(#0080b1, #004d6c);
+    background: -moz-linear-gradient(#0080b1, #004d6c);
+    background: linear-gradient(#0080b1, #004d6c);
+}
 .blue-c-gradient {
   background-color: #0080b1;
   background-image: -webkit-linear-gradient(30deg, #0080b1 51%, #00417c 49%);
@@ -79,6 +88,11 @@
 	font-size: 1.1em;
 	font-weight: 700;
 	text-transform: uppercase;;
+}
+.intro-buildings {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
 }
 .jump-to-number {
     background: #5d9632;
@@ -411,4 +425,187 @@
     text-align: center;
     padding: 15px 30px;
     font-size: 20px;
+}
+.sm-center-md-right {
+    text-align: right;
+}
+.sm-center-md-left {
+    text-align: left;
+}
+
+@media only screen and (max-width : 768px) {
+    .sm-center-md-right {
+        text-align: center;
+    }
+    .sm-center-md-left {
+        text-align: center;
+    }
+}
+
+html, body {
+   height: 100%;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+#sidebar {
+    background-color: #f1f1f1;
+    left: 0;
+    padding-left: 0px;
+    float: left;
+    min-height: 100%;
+    position: fixed;
+    z-index: 100;
+    width: 70px;
+    padding-right: 0;
+}
+
+#sidebar .collapse.in {
+    display: inline;
+}
+
+#sidebar > .nav>li>a {
+    height: 60px;
+}
+
+#main {
+    left: 0;
+}
+
+.tracking-digital-number-nav {
+    background: #6db03b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 3px 9px;
+}
+.tracking-digital-div-nav {
+    border-radius: 50%;
+    border: 2px #0080b1 solid;
+    background: #fff;
+    height: 36px;
+    margin-right: 5px;
+    padding: 2px;
+    width: 36px;
+}
+
+.tracking-digital-number-nav-2 {
+    background: #6db03b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 2px 10px;
+}
+.tracking-digital-div-nav-2 {
+    border-radius: 50%;
+    border: 3px #0080b1 solid;
+    background: #fff;
+    height: 46px;
+    margin-right: 20px;
+    padding: 4px;
+    width: 46px;
+}
+
+ /* Tooltip */
+  .green-tool + .tooltip > .tooltip-inner {
+      background-color: #6db03b;
+      color: #FFFFFF;
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .green-tool + .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid #6db03b;
+  }
+
+  .tooltip-inner {
+    max-width: 200px;
+    width: 200px; 
+}
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 8px 8px;
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+/*    #sidebar {
+        min-width: 44px;
+    }*/
+    
+    #main {
+        padding-left: 70px;
+    }
+    
+    #sidebar .visible-xs {
+       display:inline !important;
+    }
+    
+    .row-offcanvas {
+       position: relative;
+       -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+       transition: all 0.4s ease-in-out;
+    }
+    
+    .row-offcanvas-left.active .sidebar-offcanvas {
+       left: -45%;
+       position: absolute;
+       top: 0;
+       width: 45%;
+    }
+} 
+ 
+ 
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 3%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -3%;
+    position: absolute;
+    top: 0;
+    width: 3%;
+    text-align: center;
+    min-width:42px;
+  }
+  
 }

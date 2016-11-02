@@ -534,3 +534,23 @@ p {
     z-index: 1;
     position: relative;
 }
+
+.sm-center-md-right {
+    text-align: right;
+}
+.sm-center-md-left {
+    text-align: left;
+}
+.marginauto {
+     margin-right: auto; 
+     margin-left: auto;
+}
+
+@media only screen and (max-width : 768px) {
+    .sm-center-md-right {
+        text-align: center;
+    }
+    .sm-center-md-left {
+        text-align: center;
+    }
+}
