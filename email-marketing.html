@@ -15,6 +15,9 @@
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link href="./css/main.css" rel="stylesheet">
 
 </head>
@@ -357,6 +360,16 @@
         </div>
     </div>
 
+    <section class="model-2">
+      <div class="float-btn-group open">
+        <button class="btn-float btn-triger purple"><i class="icon-bars"></i></button>
+        <div class="btn-list">
+            <a id="float-btn-1" href="./digital-marketing.html" class="btn-float orange green-tool" data-toggle="tooltip" data-placement="left" title="MEASURING DIGITAL MARKETING ROI""><i class="fa fa-line-chart"></i></a>
+            <a id="float-btn-2" href="./email-marketing.html" class="btn-float blue green-tool" data-toggle="tooltip" data-placement="left" title="MEASURING DIGITAL MARKETING ROI""><i class="fa fa-laptop"></i></a>
+            <a id="float-btn-3" href="./attributing-leads.html" class="btn-float green green-tool" data-toggle="tooltip" data-placement="left" title="MEASURING DIGITAL MARKETING ROI""><i class="fa fa-user"></i></a>
+      </div>
+   </section>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 
@@ -370,9 +383,13 @@
     </script>
 
     <script>
+        $('.btn-triger').click(function(){
+            $(this).closest('.float-btn-group').toggleClass('open');
+        });
+        
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
-        })
+        });
     </script>
 
 </body>
