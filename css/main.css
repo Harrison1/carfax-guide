@@ -13,6 +13,9 @@
 	color: #6db03b;
 	font-weight: 700;
 }
+.white-bg {
+    background: #fff;
+}
 .gray-gradient {
 	background: #e6e7e8;
 	background: -webkit-linear-gradient(#e6e7e8, #fff);
