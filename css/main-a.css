@@ -555,6 +555,32 @@ p {
     }
 }
 
+ /* Tooltip */
+  .green-tool + .tooltip > .tooltip-inner {
+      background-color: #6db03b;
+      color: #FFFFFF;
+      padding: 10px;
+      font-size: 16px;
+  }
+
+.green-tool + .tooltip.left > .tooltip-arrow {
+      border-left: 5px solid #6db03b;
+  }
+
+  .green-tool + .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid #6db03b;
+  }
+
+  .tooltip-inner {
+    max-width: 200px;
+    width: 200px; 
+}
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
 section {
     padding: 40px;
     position: absolute;
